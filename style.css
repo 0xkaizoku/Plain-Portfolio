@@ -65,4 +65,32 @@ header ul li{
 .content h1{
    font-size: 5.5em;
    color: #333; 
+   transition: 0.5s;
+}
+
+.content h1 span{
+    color: brown;
+   margin: 10px 0px;
+   transition: 0.01s;
+   letter-spacing: 0.05em;
+}
+
+.content button{
+    position: relative;
+    background-color: chocolate;
+    outline: none;
+     border: none;
+     padding: 15px 35px;
+     font-size: 1.25em;
+     letter-spacing: 0.05em;
+     margin-left: 20pxd;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: 0.5s;
+     font-weight: 600;
+}
+.content button.chat{
+    background: transparent;
+    color : #333;
+    
 }
