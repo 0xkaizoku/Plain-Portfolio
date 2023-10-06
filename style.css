@@ -59,13 +59,16 @@ header ul li{
 
 .content{
     position: relative;
-    max-width: 700px;
+    max-width: 1000px;
+    left : 200px;
 
 }
-.content h1{
-   font-size: 5.5em;
+.content h1 p{
+    font-size: 2em;
    color: #333; 
    transition: 0.5s;
+   left : 40px;
+   font-weight: 299;
 }
 
 .content h1 span{
@@ -73,6 +76,8 @@ header ul li{
    margin: 10px 0px;
    transition: 0.01s;
    letter-spacing: 0.05em;
+   font-size: 2em;
+ 
 }
 
 .content button{
@@ -88,9 +93,56 @@ header ul li{
      cursor: pointer;
      transition: 0.5s;
      font-weight: 600;
+     top : 50px;
+     right : 150px;
 }
 .content button.chat{
     background: transparent;
     color : #333;
-    
+
 }
+
+.dayNight{
+    position: absolute;
+    bottom :25px;
+    left: 50%;
+    width: 60px;
+    background-color:whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+
+}
+
+.dayNight ion-icon:nth-child(2),.banner.night .dayNight ion-icon:nth-child(1){
+    display: none;
+}
+   
+
+
+.banner.night .dayNight ion-icon:nth-child(2){
+    display: block;
+
+}
+
+
+.banner .night{
+    background: #333;
+}
+.banner .night .dayNight{
+    color: #fff;
+    background: #444;
+}
+
+.banner.night header .logo,
+.banner.night .content h1,
+.banner.night .content p1,
+.banner.night .content button.chat,
+.banner.night header ul li a {
+    color: #fff;
+}
+
